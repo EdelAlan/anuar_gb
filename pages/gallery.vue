@@ -20,9 +20,6 @@ export default {
     return {
       photos: [
         {
-          url: require('~/assets/images/3.jpg')
-        },
-        {
           url: require('~/assets/images/2020-06-11_Frame-16.JPG')
         },
         {
@@ -47,7 +44,13 @@ export default {
           url: require('~/assets/images/IMG_9939.jpg')
         },
         {
-          url: require('~/assets/images/MasterClass_Day20268-3V.jpg')
+          url: require('~/assets/images/IMG_8798.jpg')
+        },
+        {
+          url: require('~/assets/images/IMG_8915-м.jpg')
+        },
+        {
+          url: require('~/assets/images/IMG_9939.jpg')
         }
       ]
     }

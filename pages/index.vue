@@ -24,7 +24,7 @@ export default {
           label: 'Project Name 1',
           meta: 'Some Shit Here',
           grid_area: 'a',
-          preview_url: require('~/assets/images/3.jpg')
+          preview_url: require('~/assets/images/2020-06-11_Frame-16.JPG')
         },
         {
           label: 'Project Name 2',
@@ -53,8 +53,8 @@ export default {
         {
           label: 'Project Name 6',
           meta: 'Some Shit Here',
-          grid_area: 'f',
-          preview_url: require('~/assets/images/MasterClass_Day20268-3V.jpg')
+          grid_area: 'e',
+          preview_url: require('~/assets/images/IMG_8915-м.jpg')
         }
       ]
     }
