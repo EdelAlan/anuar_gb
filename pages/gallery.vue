@@ -20,7 +20,7 @@ export default {
     return {
       photos: [
         {
-          url: require('~/assets/images/3.JPG')
+          url: require('~/assets/images/3.jpg')
         },
         {
           url: require('~/assets/images/2020-06-11_Frame-34.JPG')
