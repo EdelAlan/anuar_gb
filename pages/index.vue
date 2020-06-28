@@ -24,7 +24,7 @@ export default {
           label: 'Project 1',
           meta: 'beauty',
           grid_area: 'a',
-          preview_url: require('~/assets/images/3.JPG')
+          preview_url: require('~/assets/images/3.jpg')
         },
         {
           label: 'Project 2',
