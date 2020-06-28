@@ -34,4 +34,10 @@ html {
   flex-direction: column;
   text-align: center;
 }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: 0 1em;
+  }
+}
 </style>

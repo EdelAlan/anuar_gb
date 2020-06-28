@@ -123,6 +123,20 @@ export default {
   letter-spacing: 0em;
 }
 
+@media only screen and (max-width: 500px) {
+  .band {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 20em);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .band {
     grid-template-columns: 1fr 1fr;

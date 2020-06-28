@@ -10,17 +10,17 @@
       />
       <nuxt-link
         :class="{ 'header_buttons-link--active': isRouteSelected('gallery') }"
-        class="header_buttons-link ml-2"
+        class="header_buttons-link header_buttons-link-ml"
         to="/gallery"
         v-text="'Gallery'"
       />
       <nuxt-link
         :class="{ 'header_buttons-link--active': isRouteSelected('contacts') }"
-        class="header_buttons-link ml-2"
+        class="header_buttons-link header_buttons-link-ml"
         to="/contacts"
         v-text="'Contacts'"
       />
-      <a class="icon-instagram ml-3" href="https://www.instagram.com/anuar_gb/" target="_blank" />
+      <a class="icon-instagram" href="https://www.instagram.com/anuar_gb/" target="_blank" />
     </div>
   </div>
 </template>
@@ -82,18 +82,29 @@ export default {
   text-decoration: underline;
 }
 
-.ml-2 {
+.header_buttons-link-ml {
   margin-left: 2em;
 }
 
-.ml-3 {
-  margin-left: 3em;
-}
-
 .icon-instagram {
+  margin-left: 3em;
   cursor: pointer;
   width: 1.5em;
   height: 1.5em;
   background: url('~assets/icons/instagram.svg') center no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+  .header_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-instagram {
+    margin-left: 1em;
+  }
+  .header_buttons-link-ml {
+    margin-left: 1em;
+  }
 }
 </style>
