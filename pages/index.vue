@@ -53,7 +53,7 @@ export default {
         {
           label: 'Project Name 6',
           meta: 'Some Shit Here',
-          grid_area: 'e',
+          grid_area: 'f',
           preview_url: require('~/assets/images/IMG_8915-м.jpg')
         }
       ]
