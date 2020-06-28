@@ -21,40 +21,40 @@ export default {
     return {
       projects: [
         {
-          label: 'Project Name 1',
-          meta: 'Some Shit Here',
+          label: 'Project 1',
+          meta: 'beauty',
           grid_area: 'a',
-          preview_url: require('~/assets/images/2020-06-11_Frame-16.JPG')
+          preview_url: require('~/assets/images/3.JPG')
         },
         {
-          label: 'Project Name 2',
-          meta: 'Some Shit Here',
+          label: 'Project 2',
+          meta: 'film',
           grid_area: 'b',
           preview_url: require('~/assets/images/2020-06-11_Frame-16.JPG')
         },
         {
-          label: 'Project Name 3',
-          meta: 'Some Shit Here',
+          label: 'Project 3',
+          meta: 'travel',
           grid_area: 'c',
           preview_url: require('~/assets/images/DSC07712.jpg')
         },
         {
-          label: 'Project Name 4',
-          meta: 'Some Shit Here',
+          label: 'Project 4',
+          meta: 'travel',
           grid_area: 'd',
           preview_url: require('~/assets/images/IMG_8317-2.jpg')
         },
         {
-          label: 'Project Name 5',
-          meta: 'Some Shit Here',
+          label: 'Project 5',
+          meta: 'wedding',
           grid_area: 'e',
-          preview_url: require('~/assets/images/IMG_8915-м.jpg')
+          preview_url: require('~/assets/images/IMG_0172-2.jpg')
         },
         {
-          label: 'Project Name 6',
-          meta: 'Some Shit Here',
+          label: 'Project 6',
+          meta: 'beauty',
           grid_area: 'f',
-          preview_url: require('~/assets/images/IMG_8915-м.jpg')
+          preview_url: require('~/assets/images/MasterClass_Day20268-3V.jpg')
         }
       ]
     }
@@ -97,6 +97,7 @@ export default {
 }
 
 .card-description {
+  cursor: pointer;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -107,6 +108,11 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+
+.card:hover .preview_photo {
+  cursor: pointer;
+  filter: brightness(75%);
 }
 
 .card-meta {
