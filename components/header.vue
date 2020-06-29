@@ -39,7 +39,7 @@ export default {
 
 .header {
   width: 100%;
-  padding: 1.5em 0;
+  padding: 2.5em 0;
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -52,6 +52,7 @@ export default {
 }
 
 .header_buttons {
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,6 +96,9 @@ export default {
 }
 
 @media only screen and (max-width: 500px) {
+  .header {
+    align-items: flex-end;
+  }
   .header_buttons {
     display: flex;
     justify-content: space-between;

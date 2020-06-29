@@ -3,10 +3,12 @@
     <div
       v-for="(project, idx) in projects"
       :key="idx"
-      :style="{ 'grid-area': project.grid_area }"
+      :style="{
+        'grid-area': project.grid_area,
+        'background-image': `url(${project.preview_url})`
+      }"
       class="card"
     >
-      <img class="preview_photo" :src="project.preview_url">
       <div class="card-description">
         <span class="card-label" v-text="project.label" />
         <span class="card-meta" v-text="project.meta" />
@@ -74,17 +76,17 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.preview_photo {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: filter .5s ease;
-}
-
-.preview_photo:hover {
   cursor: pointer;
+  transition: filter .5s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:hover > .card-description {
+  color: #000;
+}
+
+.card:hover {
   filter: brightness(75%);
 }
 
@@ -104,15 +106,11 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 50%;
+  bottom: .5em;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-}
-
-.card:hover .preview_photo {
-  cursor: pointer;
-  filter: brightness(75%);
+  transition: all .5s ease;
 }
 
 .card-meta {

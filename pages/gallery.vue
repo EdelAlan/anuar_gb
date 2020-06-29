@@ -20,9 +20,6 @@ export default {
     return {
       photos: [
         {
-          url: require('~/assets/images/3.jpg')
-        },
-        {
           url: require('~/assets/images/2020-06-11_Frame-34.JPG')
         },
         {
@@ -42,6 +39,9 @@ export default {
         },
         {
           url: require('~/assets/images/IMG_9939.jpg')
+        },
+        {
+          url: require('~/assets/images/3.jpg')
         },
         {
           url: require('~/assets/images/MasterClass_Day20268-3V.jpg')
@@ -64,9 +64,11 @@ export default {
    column-gap:           0px;
 }
 
+.gallery-photo {
+  transition: filter .5s ease;
+}
 .gallery-photo:hover {
-  opacity: .75;
-  transition: opacity .5s ease;
+  filter: brightness(75%);
 }
 
 .gallery-img {
