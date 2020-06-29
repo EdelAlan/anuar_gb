@@ -97,7 +97,11 @@ export default {
 
 @media only screen and (max-width: 500px) {
   .header {
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_label {
+    margin-bottom: .5em;
   }
   .header_buttons {
     display: flex;
