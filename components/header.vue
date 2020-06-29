@@ -61,6 +61,7 @@ export default {
 .header_buttons-link {
   color: #272727;
   text-decoration: none;
+  transition: all 250ms ease;
 }
 
 .header_buttons-link:link {
@@ -93,6 +94,11 @@ export default {
   width: 1.5em;
   height: 1.5em;
   background: url('~assets/icons/instagram.svg') center no-repeat;
+  transition: all 250ms ease;
+}
+
+.icon-instagram:hover {
+  background-image: url('~assets/icons/instagram_red.svg');
 }
 
 @media only screen and (max-width: 500px) {
